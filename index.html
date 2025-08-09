@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header__title">Etch-a-Sketch</h1>
+    </header>
+
+    <main class="main">
+        <section class="controls" aria-labelledby="controls-title">
+            <h2 id="controls-title" class="controls__title">Drawing Controls</h2>
+
+            <div class="controls__group">
+                <label for="colorPicker" class="controls__label">Pick a color:</label>
+                <input id="colorPicker" class="controls__color-picker" type="color" aria-label="Select drawing color">
+            </div>
+         
+            <div class="controls__group">
+                <button class="controls__button" type="button" data-mode="color" aria-pressed="false">Color mode</button>
+                <button class="controls__button" type="button" data-mode="rainbow" aria-pressed="false">Rainbow mode</button>
+                <button class="controls__button" type="button" data-mode="eraser" aria-pressed="false">Eraser</button>
+                <button class="controls__button" type="button" data-action="clear">Clear</button>
+            </div>
+
+            <div class="controls__group">
+                <label for="sizePicker" class="controls__label">
+                    Grid size: 
+                    <span id="sizeValue" class="controls__size-value">16 x 16</span>
+                </label>
+            </div>
+        </section>
+
+        <section class="grid" role="grid" aria-label="Drawing area"></section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">This project was created for 
+            <a class="odin-link" href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch" target="_blank" rel="noopener noreferrer">
+                The Odin Project</a>.</p>
+    </footer>
+    
+    <script src="js/grid.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
