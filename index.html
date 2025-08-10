@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
@@ -34,6 +39,7 @@
                     Grid size: 
                     <span id="sizeValue" class="controls__size-value">16 x 16</span>
                 </label>
+                <input id="sizePicker" class="controls__size-picker" type="range" min="1" max="100" aria-valuemin="1" aria-valuemax="100" aria-valuenow="16">
             </div>
         </section>
 

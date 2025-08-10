@@ -1,3 +1,67 @@
-@import url(reset.css);
-@import url(variables.css);
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-bg);
+}
+
+.header__title {
+    font-size: var(--font-size-4xl);
+    text-align: center;
+    margin-bottom:var(--spacing-2xl) ;
+}
+
+
+.main {
+    display: flex;
+    width: 100vw;
+}   
+
+.main > section:first-child {
+    flex-basis: 40%;
+    align-items: center;
+    text-align: center;
+}
+
+.main > section:last-child {
+    flex-basis: 60%;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+.controls__title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.controls > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 70%;
+    margin: var(--spacing-md) auto;
+}
+
+.controls__button {
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-sm) 0;
+}
+
+.controls__button:hover{
+        background-color: var(--color-border);
+        color: var(--color-text);
+    }
+
+.controls__size-picker {
+    margin-top: var(--spacing-md);
+}
+
+.footer__text > a {
+    font-size: var(--font-size-sm);
+    color: var(--color-muted);
+}
+
 
